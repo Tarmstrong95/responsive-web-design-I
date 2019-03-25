@@ -103,25 +103,30 @@ nav, .services-header-img, header h1, header p {
     margin: 7px 0 0 0;
 }
 header .logo {
-    margin-left: 15px;
+    margin-left: 45px;
+    order: 2;
+    padding-top: 0;
+}
+header .nav-logo-cont {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 7px;
 }
 nav {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    flex: 1;
+    order: 1;
 }
 nav .nav{
 	text-decoration: none;
 	color: rgb(173, 173, 173);
 	font-size: 16px;
-	/* padding: 0 5px; */
 	transition: .1s ease-in;
 	display: flex;
 	align-items: center;
-	margin: 5px 0 0 0;
 }
-nav .nav:hover {
-	border-radius: 2px;
-}
+
 section {
 	display: flex;
 	margin-bottom: 72px;
@@ -147,11 +152,15 @@ section {
 	margin: 0 0 0 188px;
 	transition: .1s ease-in;
 }
-.centered a:hover, nav .nav:hover {
+.centered a:hover {
 	color: white;
 	background-color: rgb(97, 97, 97);
 	transform: scale(1.1);
 	border-radius: 5px;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(102, 102, 102);
 }
 .rnd-img {
 	/* width: 400px; */
@@ -204,3 +213,59 @@ footer section {
     margin-bottom: 36px;
 }
 /*footer end*/
+
+
+/* tablet responsive */
+@media(max-width: 800px){
+
+    header .nav-logo-cont {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-top: 7px;
+    }
+    header .logo {
+        margin-left: 18px;
+        margin-bottom: 18px;
+        order: 1;
+        padding-top: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        order: 2;
+        width: 100%;
+    }
+    nav .nav {
+        text-decoration: none;
+        color: rgb(173, 173, 173);
+        font-size: 16px;
+        transition: .1s ease-in;
+        display: flex;
+        align-items: center;
+    }
+    .txtNbtn {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .txtNbtn h1 {
+        margin: 29px 0 23px 46px;
+        font-size: 72px;
+    }
+    .centered a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        border: 1px solid rgb(175, 175, 175);
+        width: 170px;
+        padding: 7px 0;
+        margin: 0 auto 0 284px;
+        transition: .1s ease-in;
+    }
+    .rnd-img{
+        display: none;
+    }
+
+}

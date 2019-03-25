@@ -133,12 +133,12 @@ section {
 	margin-top: 43px;
 }
 .txtNbtn {
-	width: 50%;
+	width: 440px;
 	text-align: center;
 	margin-left: 0px;
 }
 .txtNbtn h1 {
-    margin: 82px 0 24px 126px;
+    margin: 82px auto 25px;
     font-size: 72px;
 }
 .centered a {
@@ -146,15 +146,15 @@ section {
 	text-decoration: none;
 	color: black;
 	font-size: 17px;
-	border: 1px solid rgb(175, 175, 175);
+	border: 1px solid rgb(0, 0, 0);
 	width: 170px;
 	padding: 7px 0;
-	margin: 0 0 0 188px;
+	margin: auto;
 	transition: .1s ease-in;
 }
 .centered a:hover {
 	color: white;
-	background-color: rgb(97, 97, 97);
+	background-color: rgb(0, 0, 0);
 	transform: scale(1.1);
 	border-radius: 5px;
 }
@@ -230,6 +230,9 @@ footer section {
         order: 1;
         padding-top: 0;
     }
+    header section {
+        justify-content: center;
+    }
     nav {
         display: flex;
         justify-content: space-between;
@@ -246,24 +249,16 @@ footer section {
     }
 
     .txtNbtn {
-        width: 100%;
+        width: 440px;
         text-align: center;
         margin-left: 0px;
     }
     .txtNbtn h1 {
-        margin: 29px 0 23px 46px;
+        margin: 29px auto 46px;
         font-size: 72px;
     }
     .centered a {
-        display: block;
-        text-decoration: none;
-        color: black;
-        font-size: 17px;
-        border: 1px solid rgb(175, 175, 175);
-        width: 170px;
-        padding: 7px 0;
-        margin: 0 auto 0 284px;
-        transition: .1s ease-in;
+        margin: auto;
     }
     .rnd-img{
         display: none;
@@ -294,6 +289,9 @@ footer section {
     header section {
         margin-top: 26px;
         flex-direction: column;
+    }
+    .txtNbtn {
+        width: 100%;
     }
     .txtNbtn h1 {
         margin: 26px 0 25px 0;

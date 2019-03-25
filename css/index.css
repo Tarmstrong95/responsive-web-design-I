@@ -163,9 +163,6 @@ nav a:hover {
     color: rgb(102, 102, 102);
 }
 .rnd-img {
-	/* width: 400px; */
-	/* text-align: center; */
-	/* display: block; */
 	margin-left: auto;
 }
 .rnd-img img {
@@ -219,43 +216,23 @@ footer section {
 @media(max-width: 800px){
 
     header .nav-logo-cont {
-        display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin-top: 7px;
     }
     header .logo {
         margin-left: 18px;
         margin-bottom: 18px;
         order: 1;
-        padding-top: 0;
     }
     header section {
         justify-content: center;
     }
     nav {
-        display: flex;
-        justify-content: space-between;
         order: 2;
         width: 100%;
     }
-    
-    nav .nav {
-        text-decoration: none;
-        color: rgb(173, 173, 173);
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-    }
-
-    .txtNbtn {
-        width: 440px;
-        text-align: center;
-        margin-left: 0px;
-    }
     .txtNbtn h1 {
         margin: 29px auto 46px;
-        font-size: 72px;
     }
     .centered a {
         margin: auto;
@@ -280,7 +257,6 @@ footer section {
     }
     nav .nav {
         font-size: 22px;
-        display: flex;
         border-bottom: 1px solid grey;
         width: 100%;
         justify-content: center;
@@ -295,9 +271,6 @@ footer section {
     }
     .txtNbtn h1 {
         margin: 26px 0 25px 0;
-    }
-    .centered a {
-        margin: auto;
     }
     header {
         margin: 20px 0 16px 0;
